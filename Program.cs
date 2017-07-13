@@ -1,46 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-
-
-public interface IVehicle
-{
-    int Wheels { get; set; }
-    int Doors { get; set; }
-    int PassengerCapacity { get; set; }
-   
-    string TransmissionType { get; set; }
-    double EngineVolume { get; set; }
-
-    void Start();
-    void Stop();
-   
-   
-}
-
-public interface IWater
-{
-    double MaxWaterSpeed { get; set; }
-    void Drive();
-}
-
-public interface IAir
-{
-     bool Winged { get; set; }
-     double MaxAirSpeed { get; set; }
-     void Fly();
-     
-}
-
-public interface IGround
-{
-     double MaxLandSpeed { get; set; }
-     void Drive();
-}
-
-
-
-
 public class Program
 {
 

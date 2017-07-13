@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class Boeing : IVehicle,IAir
+public class Boeing : Vehicle,IAir
 {
   public int Wheels { get; set; } = 3;
   public int Doors { get; set; } = 3;
@@ -14,15 +14,5 @@ public class Boeing : IVehicle,IAir
   public void Fly()
   {
     Console.WriteLine("The Boeing is the queen of all planes and makes travel a pleasure!");
-  }
-
-  public void Start()
-  {
-    throw new NotImplementedException();
-  }
-
-  public void Stop()
-  {
-    throw new NotImplementedException();
   }
 }

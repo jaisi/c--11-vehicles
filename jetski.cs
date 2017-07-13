@@ -1,13 +1,8 @@
 using System;
 using System.Collections.Generic;
 
-public class JetSki : IVehicle,IWater
+public class JetSki : Vehicle,IWater
 {
-    public int Wheels { get; set; }
-    public int Doors { get; set; }
-    public int PassengerCapacity { get; set; }
-    public string TransmissionType { get; set; }
-    public double EngineVolume { get; set; }
     public double MaxWaterSpeed { get; set; }
  
 
@@ -17,14 +12,5 @@ public class JetSki : IVehicle,IWater
     }
 
 
-    public void Start()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Stop()
-    {
-        throw new NotImplementedException();
-    }
 }
 

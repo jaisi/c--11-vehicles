@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class Cessna : IVehicle,IAir
+public class Cessna : Vehicle,IAir
 {
   public int Wheels { get; set; } = 3;
   public int Doors { get; set; } = 3;
@@ -20,16 +20,6 @@ public class Cessna : IVehicle,IAir
   public void Fly()
   {
     Console.WriteLine("The Cessna effortlessly glides through the clouds like a gleaming god of the Sun");
-  }
-
-  public void Start()
-  {
-    throw new NotImplementedException();
-  }
-
-  public void Stop()
-  {
-    throw new NotImplementedException();
   }
 }
 

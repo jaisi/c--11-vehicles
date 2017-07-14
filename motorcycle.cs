@@ -9,10 +9,11 @@ public class Motorcycle : Vehicle,IGround
     public string TransmissionType { get; set; } = "Manual";
     public double EngineVolume { get; set; } = 1.3;
     public double MaxLandSpeed { get; set; } = 160.4;
- 
-
+    
     public void Drive()
     {
-        Console.WriteLine("The motorcycle screams down the highway");
+        Console.WriteLine($"The motorcycle has {Wheels} wheels and screams down the highway");
     }
+
+   
 }

@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 
+//converted IVehicle to class Vehicle
+
 public class Vehicle
 {
     int Wheels { get; set; }
@@ -12,12 +14,13 @@ public class Vehicle
 
     void  Start()
     {
-
-    }
-    void Stop()
-    {
         
     }
-   
+    
+    void Stop()
+    {
+
+    }
+    
    
 }
